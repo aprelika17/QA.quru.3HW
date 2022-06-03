@@ -17,13 +17,12 @@ public class FormTests {
     static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
-
     }
 
     @Test
     void fillForm() {
 
-        //Variables
+        //Переменные
         String name = "Тест";
         String lastname = "Гуру";
         String email = "test_quru@gmail.com";
@@ -36,7 +35,7 @@ public class FormTests {
         String city = "Delhi";
         String happy_text = "Thanks for submitting the form";
 
-        //Start test
+        //Старт теста
         open("/automation-practice-form");
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");
